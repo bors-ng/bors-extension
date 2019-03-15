@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Bors for GitHub.com",
+  "version": "0.1",
+
+  "description": "Adds a `bors r+` button to GitHub's PR interface.",
+
+  "icons": {
+    "48": "icons/bors-48.png",
+    "96": "icons/bors-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["bors.js"]
+    }
+  ],
+
+  "applications": {
+    "gecko": {
+      "id": "extension@bors.tech"
+    }
+  }
+}
