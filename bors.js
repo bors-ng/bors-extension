@@ -12,9 +12,22 @@
             pr.appendChild(b);
         }
     }
+    function getCommand() {
+        const p = window.location.pathname;
+        if (p.startsWith('/servo/')) {
+            return "@bors-servo r+";
+        }
+        if (p.startsWith('/rust-lang/')) {
+            return "@bors r+";
+        }
+        if (p.startsWith('/bundler/') || p.startsWith('/rubygems/')) {
+            return "@bundlerbot r+";
+        }
+        return "bors r+";
+    }
     function run() {
         fireEvent($(".js-reviews-toggle"), "click");
-        $("#pull_request_review_body").value = "bors r+";
+        $("#pull_request_review_body").value = getCommand();
         fireEvent($(`[name="pull_request_review[event]"][value="approve"]`), "click");
         setTimeout(function() {
             $("#submit-review form").submit();
