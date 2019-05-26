@@ -1,7 +1,5 @@
 Add a `[bors r+]` button to GitHub
 ======
 
-This has only been tested in Firefox.
-It's probably super-fragile.
-
-To try it out, use the [load temporary add-on](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#Installing) button in `about:debugging`.
+This add-on has been submitted to <https://addons.mozilla.org>.
+If you want to help test and maintain it for other browsers, let us know on the forum at <https://forum.bors.tech>.
