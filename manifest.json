@@ -19,7 +19,7 @@
 
   "applications": {
     "gecko": {
-      "id": "extension@bors.tech"
+      "id": "add-on@bors.tech"
     }
   }
 }
