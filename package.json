@@ -2,10 +2,10 @@
   "repository": {},
   "license": "APACHE-2.0",
   "scripts": {
-    "start:firefox": "web-ext run --source-dir ./extension-dist/",
+    "start:firefox": "web-ext run --source-dir ./",
     "build": "web-ext build"
   },
   "devDependencies": {
-    "web-ext": "^3.0.0"
+    "web-ext": "^3.2.1"
   }
 }
