@@ -32,8 +32,8 @@ or the default settings if the stored settings are empty.
 */
 function updateUI() {
   browser.storage.sync.get().then(storeSettings => {
-    document.getElementById('api-option').checked = storeSettings[STORAGE_USE_GH_API];
-    document.getElementById('gh-token').value = storeSettings[STORAGE_GH_API_TOKEN];
+    document.getElementById('api-option').checked = storeSettings[STORAGE_USE_GH_API] || false;
+    document.getElementById('gh-token').value = storeSettings[STORAGE_GH_API_TOKEN] || '';
   });
 }
 
