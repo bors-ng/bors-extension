@@ -1,0 +1,27 @@
+body {
+  margin: 20px;
+}
+
+#success-message {
+  display: none;
+}
+
+#loading-message {
+  display: none;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #202023;
+        color: white;
+    }
+}

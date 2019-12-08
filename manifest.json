@@ -17,6 +17,17 @@
     }
   ],
 
+  "permissions": [
+    "storage"
+  ],
+
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true,
+    "chrome_style": true,
+    "open_in_tab": false
+  },
+
   "applications": {
     "gecko": {
       "id": "add-on@bors.tech"
