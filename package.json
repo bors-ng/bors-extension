@@ -3,7 +3,9 @@
   "license": "APACHE-2.0",
   "scripts": {
     "start:firefox": "webpack && web-ext run --target firefox-desktop",
-    "build": "webpack && web-ext build"
+    "build": "webpack && web-ext build",
+    "webpack": "webpack",
+    "webpack:watch": "webpack --watch"
   },
   "devDependencies": {
     "web-ext": "^3.2.1",
