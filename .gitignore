@@ -1,4 +1,4 @@
 /.idea/
 /node_modules/
 /web-ext-artifacts/
-/dist/
+/extension_dist/dist

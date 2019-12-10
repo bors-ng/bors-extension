@@ -2,7 +2,9 @@
   "repository": {},
   "license": "APACHE-2.0",
   "scripts": {
-    "start:firefox": "webpack && web-ext run --target firefox-desktop",
+    "start": "webpack && web-ext run --source-dir ./extension_dist",
+    "start:firefox": "webpack && web-ext run --target firefox-desktop --source-dir ./extension_dist",
+    "start:chrome": "webpack && web-ext run --target chromium --source-dir ./extension_dist",
     "build": "webpack && web-ext build",
     "webpack": "webpack",
     "webpack:watch": "webpack --watch"
