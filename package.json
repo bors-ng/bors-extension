@@ -2,8 +2,8 @@
   "repository": {},
   "license": "APACHE-2.0",
   "scripts": {
-    "start:firefox": "web-ext run --source-dir ./",
-    "build": "web-ext build"
+    "start:firefox": "webpack && web-ext run --target firefox-desktop",
+    "build": "webpack && web-ext build"
   },
   "devDependencies": {
     "web-ext": "^3.2.1",
