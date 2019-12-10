@@ -1,9 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/options.js',
+  entry: {
+    bors: './src/bors_entry.js',
+    options: './src/options_entry.js',
+  },
   output: {
-    filename: 'options.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
