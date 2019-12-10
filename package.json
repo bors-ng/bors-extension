@@ -5,7 +5,7 @@
     "start": "webpack && web-ext run --source-dir ./extension_dist",
     "start:firefox": "webpack && web-ext run --target firefox-desktop --source-dir ./extension_dist",
     "start:chrome": "webpack && web-ext run --target chromium --source-dir ./extension_dist",
-    "build": "webpack && web-ext build",
+    "build": "webpack --mode=production && web-ext build --overwrite-dest --source-dir ./extension_dist",
     "webpack": "webpack",
     "webpack:watch": "webpack --watch"
   },
