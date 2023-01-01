@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "web-ext": "^3.2.1",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
